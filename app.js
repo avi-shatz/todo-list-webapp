@@ -16,7 +16,7 @@ app.use(express.static("public"));
 app.set('view engine', 'ejs');
 
 app.get("/", (req, res) => {
-  res.render("list", {});
+  res.render("list", {dayText: "sunday"});
 });
 
 app.post("/", (req, res) => {
